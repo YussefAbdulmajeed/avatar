@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.section-one {
+    background-image: linear-gradient(to right , #01022d , #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 83.85vh;
+    /* margin: 40px auto; */ 
+    /* الصوره لو مظهرتش عشان هي تحت الالوان لازم تخفف الالوان  */
+    background-image: 
+    linear-gradient(to right ,#01022de5  30%,#00000088),
+    url(media/background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container:hover {
+    background-image: 
+    linear-gradient(to right ,#01022de5  30%, transparent),
+    url(media/background.webp);
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.875em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header .navigation {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .navigation a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .navigation a:hover {
+    border-bottom: 2px solid white;
+}
+
+div.main-section {
+    width: 50%;
+    /* height: calc(100% - 54.4px); */
+    padding: 30px;
+    color: white;
+}
+
+div.main-section h2 {
+    margin-top: 70px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 6.25em; 
+}
+
+div.main-section .write p {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    line-height: 25px;
+    padding-bottom: 25px;
+    width: 380px;
+}
+
+div.main-section .write .btn1 {
+    text-decoration: none;
+    background-color: white;
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    transition: all 0.7s ease;
+    border: 2px solid transparent;
+}
+
+div.main-section .write .btn1:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 26px 0 rgba(250 250 250 / 75%);
+}
+
+.section-films {
+    width: 100%;
+    height: 100vh;
+}
+
+/*-----------------------------------------*/ 
+
+.title {
+    color: #3a6cf4;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movice-card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 20px 0 rgba(1 1 1 / 50%);
+    border-radius: 15px;
+    margin: 15px;
+    transition: all 0.7s ease;
+}
+
+.movice-card:hover {
+    transform: scale(1.1);
+}
+
+.movice-card .imag img {
+    width: 100%;
+   height: 250px;
+   padding-bottom: 20px;
+   border-radius: 15px 15px 0 0;
+}
+
+.movice-card .info h3 {
+    color: #3a6cf4;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.movice-card .info p {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 15px 0;
+}
+
+.btns a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.btns a.red {
+    background-color: red;
+    border: 3px solid transparent;
+}
+
+.btns a.red:hover {
+    border: 3px solid black;
+}
+
+.btns a.green {
+    background-color: green;
+    border: 3px solid transparent;
+}
+
+.btns a.green:hover {
+    border: 3px solid black;
+}
+/*---------------footer---------------- */
+
+.footer {
+    background-color: #000016;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p span,
+footer p {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+footer p span {
+    color: #3a6cf4;
+}
+
+footer .social-icons a {
+    padding: 5px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.9 ease;
+}
+
+.social-icons a:hover {
+    font-size: 2em;
+    color: #0038d3;
+}
+
+@media (max-width: 599px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: 
+        linear-gradient(to right ,#01022de5  30%,#00000088),
+        url(media/background2.webp);
+    }
+
+    header {
+        padding: 20px 5px;
+    }
+
+    header .logo {
+        font-size: 1em;
+    }
+
+    header .navigation {
+        width: 65%;
+    }
+
+    header .navigation a {
+        font-size: .8em;
+    }
+
+    div.main-section {
+        padding: 15px;
+        margin-top: 70px;
+    }
+
+    div.main-section h2 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+        font-size: 3em; 
+    }
+
+    div.main-section .write p {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 14px; 
+        width: 20em;
+    }
+
+    .movice-card {
+        width: 19em;
+    }
+   
+    .movice-card:hover {
+        transform: scale(1.08);
+    }
+
+    .movice-card .info p {
+        letter-spacing: 1px;
+        font-size: 0.9em;
+        padding-right: 0px;
+        padding-left: 10px;
+        line-height: 20px;
+    }
+
+    footer p span,
+    footer p {
+        font-weight: 600;
+        font-size: 0.8em;
+    }
+
+    .social-icons {
+        font-size: .8em;
+    }
+
+    .social-icons a:hover {
+        font-size: 1.2em;
+        color: #0038d3;
+    }
+}
+
+@media (min-width: 600px , max-width: 1023) {
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: 
+        linear-gradient(to right ,#01022de5  30%,#00000088),
+        url(media/background2.webp);
+    }
+
+    header .logo {
+        font-size: 3em;
+    }
+
+    header .navigation {
+        width: 65%;
+    }
+
+    header .navigation a {
+        font-size: 1.8em;
+    }
+
+    div.main-section {
+        padding: 15px;
+        margin-top: 70px;
+    }
+
+    div.main-section h2 {
+        margin-top: 100px;
+        margin-bottom: 15px;
+        font-size: 6em; 
+    }
+
+    div.main-section .write p {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 30px; 
+        width: 20em;
+        line-height: 35px;
+    }
+
+    .btns a {
+        display: inline-block;
+        font-size: 0.7em;
+        padding: 3px 10px;
+        border-radius: 15px;
+    }
+}
+
